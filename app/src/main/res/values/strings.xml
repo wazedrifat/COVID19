@@ -31,4 +31,6 @@
 	<string name="set_home_locations">set Home Locations</string>
 	<string name="reminder_for_handwash_after_entering_home">Reminder for handwash after entering home</string>
 	<string name="use_location_service_to_detect_when_entered_home_from_outside">use location Service to detect when entered home from outside</string>
+	<string name="watch">Watch</string>
+	<string name="search">Search</string>
 </resources>

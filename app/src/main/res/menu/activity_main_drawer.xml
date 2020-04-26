@@ -11,6 +11,9 @@
 			android:id="@+id/nav_reminder"
 			android:title="@string/reminder"/>
 		<item
+			android:id="@+id/nav_watch"
+			android:title="@string/watch"/>
+		<item
 			android:id="@+id/nav_analytics"
 			android:title="@string/analytics"/>
 		<item
