@@ -15,6 +15,16 @@ import android.widget.GridView;
  */
 public class Dashboard extends Fragment {
 	GridView gridView;
+	String[] titles = {
+			"Symptomps", "protection", "Preventions", "Do I have corona virus?",
+			"How people got cured from corona", "Emergency Contacts", "Cure Status",
+			"News About Corona", "Measures taken against Corona"
+	};
+	int[] images = {
+			R.drawable.symptomps, R.drawable.protections, R.drawable.preventions, R.drawable.doihavecorona,
+			R.drawable.gotcurefromcorona, R.drawable.emergencycontact, R.drawable.curestatus,
+			R.drawable.news, R.drawable.measures
+	};
 
 	public Dashboard() {
 		// Required empty public constructor
@@ -29,7 +39,7 @@ public class Dashboard extends Fragment {
 
 		gridView = view.findViewById(R.id.dashboardGridViewID);
 
-		CustomDashboardGridViewAdapter adapter = new CustomDashboardGridViewAdapter(getContext());
+		CustomDashboardGridViewAdapter adapter = new CustomDashboardGridViewAdapter(getContext(), titles, images);
 		gridView.setAdapter(adapter);
 
 		return view;

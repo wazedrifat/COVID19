@@ -14,20 +14,14 @@ import org.w3c.dom.Text;
 class CustomDashboardGridViewAdapter extends BaseAdapter {
 	Context context;
 	int cnt = 9;
-	String[] titles = {
-			"Symptomps", "protection", "Preventions", "Do I have corona virus?",
-			"How people got cured from corona", "Emergency Contacts", "Cure Status",
-			"News About Corona", "Measures taken against Corona"
-	};
-	int[] images = {
-			R.drawable.symptomps, R.drawable.protections, R.drawable.preventions, R.drawable.doihavecorona,
-			R.drawable.gotcurefromcorona, R.drawable.emergencycontact, R.drawable.curestatus,
-			R.drawable.news, R.drawable.measures
-	};
+	String[] titles;
+	int[] images;
 	LayoutInflater inflater;
 
-	public CustomDashboardGridViewAdapter(Context context) {
+	public CustomDashboardGridViewAdapter(Context context, String[] titles, int[] images) {
 		this.context = context;
+		this.titles = titles;
+		this.images = images;
 	}
 
 
